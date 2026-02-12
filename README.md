@@ -18,4 +18,4 @@ El sitio es completamente responsivo e incluye efectos interactivos como:
 - Formulario con validación en tiempo real
 - Cambio de color en secciones
 
-el enlace:
+el enlace: https://rodrigovu.github.io/cv-interactivo/

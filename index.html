@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Interactivo - Rodrigo Villarroel Ugalde </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rodrigo Villarroel Ugalde</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"> <button id="modo-btn" class="btn btn-outline-light ms-3"> 
+                        Cambiar Modo 
+                    </button> 
+                     </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="container mt-5 seccion">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <!-- FOTO -->
+                <img src="IMAGEN_AQUI.jpg" class="img-fluid rounded-circle" alt="Foto de perfil">
+            </div>
+
+            <div class="col-md-8">
+                <h2> Rodrigo Villarroel Ugalde</h2>
+                <p><strong>Profesión:</strong> Ingeniero Comercial</p>
+                <p>
+                    Profesional Ingeniero Comercial Bilingüe con experiencia en chile y en el extranjero. Conocimiento en fomento productivo, desarrollo local, control de gestión y analisis de operaciones.
+                </p>
+                <button id="color-btn" class="btn btn-secondary mt-3"> Cambiar Color Sección </button>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="Experiencia" class="container mt-5 seccion">
+        <h2>Experiencia laboral</h2>
+
+        <div class="mb-3">
+            <h5> SMU S.A</h5>
+            <p><strong>Ingeniero de operaciones </strong> </p>
+            <p><strong>Periodo:</strong> 2025</p>
+            <p> Cargo de multiples responsabilidades durante la duración del programa, iniciando en área corporativa junto a equipos de ecommerce, comercial y negociación, control de perdidas, gestión del cambio. Luego me desempeñé en el área logistica, trabajando junto a los equipos de abastecimiento y compras, control de operaciones en bodega fría y seca, control de transportes y gestión internacional</p>
+        </div>
+
+        <div class="mb-3">
+            <h5> Limerick center</h5>
+            <p><strong>Customer service </strong> </p>
+            <p><strong>Periodo:</strong> 2024</p>
+            <p>Mi responsabilidad durante este tiempo fue de atención al cliente en restaurante de ciudad de Limerick, lugar donde es indispensable un nivel de inglés avanzado para poder manejar caja durante el turno, hacer apertura, cierre y además comunicarse con los clientes de manera eficiente. El restaurant está ubicado en calle childers road, “One shopping park” Limerick, Irlanda.</p>
+        </div>
+
+         <div class="mb-3">
+            <h5> Fundación nacional para la superación de la pobreza</h5>
+            <p><strong>Profesional Servicio País </strong> </p>
+            <p><strong>Periodo:</strong> 2022-2023</p>
+            <p>Profesional servicio país en Fundación nacional para la superación de la pobreza. Trabajo desempeñado en dependencias de UMDEL de la Municipalidad de Paillaco. Responsabilidad de coordinación de proyectos e iniciativas, asesorar particulares y agrupaciones en postulación de proyectos como fondo de ferias libres SERCOTEC, capital abeja y semilla, FOSIS, CONADI, FNDR. Asesorías en emprendimientos para lograr escalamiento, foco en marketing digital, vinculación con estructura de oportunidades, planeación y ejecución de capacitaciones.</p>
+        </div>
+
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="container mt-5 seccion">
+        <h2>Formación Académica</h2>
+
+        <div class="mb-3">
+            <h5>Universidad de Valparaíso</h5>
+            <p><strong>Título:</strong> Ingeniero Comercial</p>
+            <p><strong>Año:</strong> 2020</p>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+<section id="habilidades" class="container mt-5 seccion">
+    <h2>Habilidades</h2>
+
+    <div class="mb-3">
+        <label> Excel avanzado</label>
+        <div class="progress">
+            <div class="progress-bar barra" data-width="90%">0%</div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label>Inglés avanzado</label>
+        <div class="progress">
+            <div class="progress-bar barra" data-width="90%">0%</div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label>Trabajo en equipo</label>
+        <div class="progress">
+            <div class="progress-bar barra" data-width="100%">0%</div>
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- CONTACTO -->
+<section id="contacto" class="container mt-5 mb-5 seccion">
+    <h2>Contacto</h2>
+
+    <form id="formulario">
+
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Escribe tu nombre">
+            <small id="error-nombre" class="text-danger"></small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Escribe tu email">
+            <small id="error-email" class="text-danger"></small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" rows="3"></textarea>
+            <small id="error-mensaje" class="text-danger"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+    </form>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
+
+</body>
+</html>
